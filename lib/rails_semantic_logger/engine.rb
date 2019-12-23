@@ -133,7 +133,7 @@ module RailsSemanticLogger
       require('rails_semantic_logger/extensions/action_controller/live') if defined?(ActionController::Live)
       require('rails_semantic_logger/extensions/action_dispatch/debug_exceptions') if defined?(ActionDispatch::DebugExceptions)
       require('rails_semantic_logger/extensions/action_view/streaming_template_renderer') if defined?(ActionView::StreamingTemplateRenderer::Body)
-      require('rails_semantic_logger/extensions/active_job/logging') if defined?(ActiveJob)
+      # require('rails_semantic_logger/extensions/active_job/logging') if defined?(ActiveJob)
       require('rails_semantic_logger/extensions/active_model_serializers/logging') if defined?(ActiveModelSerializers)
 
       if config.rails_semantic_logger.semantic
